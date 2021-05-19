@@ -1,11 +1,12 @@
 /*COMMON*/
 body {
   font-family: Oswald;
+  font-size: 1rem;
 }
+/*COMMON*/
 
 /*CAROUSEL*/
 .carousel .carousel-item {
-  border: 1px solid red;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +22,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .navbar-dark .navbar-brand {
   font-size: 2rem;
@@ -46,20 +48,95 @@ body {
 
 .navbar-main {
   top: 65vh;
-  padding-right: 1rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 
 /*NAVBAR*/
 
-.social-media {
-  list-style-type: none;
-  display: flex;
+header {
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  left: 0;
+  right: 0;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .contact {
+  color: white;
+  font-size: 1.3rem;
+  text-align: right;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
+}
+
+header .contact .phone {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+/*  HEADER */
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 7rem;
   z-index: 1;
 }
 
-.social-media a {
+footer ul {
+  display: flex;
+  list-style-type: none;
 }
+
+footer a {
+  background-color: #f32c2c;
+  padding: 0.2rem 1rem;
+  border-radius: 0.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+  text-align: right;
+  box-shadow: 2px 2px 3px #03030357;
+}
+
+footer i {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.212);
+}
+/* FOOTER */
+
+/* SOCIAL MEDIA */
+
+.social-media {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.social-media a {
+  background-color: rgba(22, 9, 9, 0.842);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-media li {
+  margin-right: 0.7rem;
+}
+
+/* SOCIAL MEDIA */
