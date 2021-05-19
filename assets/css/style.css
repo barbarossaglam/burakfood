@@ -15,11 +15,51 @@ body {
 
 /*NAVBAR*/
 .navbar {
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  padding: 1rem 0;
 }
+.navbar-dark .navbar-brand {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+
+.navbar-dark .navbar-brand span {
+  color: red;
+  padding: 0rem 0.4rem;
+  font-weight: 700;
+}
+
+.navbar nav {
+  font-weight: 300;
+}
+
+.navbar nav .nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-main {
+  top: 65vh;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+}
+
 /*NAVBAR*/
+
+.social-media {
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.social-media a {
+}
